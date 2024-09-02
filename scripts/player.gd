@@ -68,4 +68,3 @@ func get_Gravity(velocity: Vector2):
 	if velocity.y < 0:
 		return gravity
 	return fallGravity
-
