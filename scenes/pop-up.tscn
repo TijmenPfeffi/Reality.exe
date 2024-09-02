@@ -1,0 +1,58 @@
+[gd_scene load_steps=3 format=3 uid="uid://bwiewg0a0gyc2"]
+
+[ext_resource type="Texture2D" uid="uid://c3u5bh6hhudtf" path="res://assets/Sprites/Windows/Main-game-close.png" id="1_gj0jx"]
+[ext_resource type="Script" path="res://scripts/pop-up single.gd" id="2_3u71u"]
+
+[node name="pop-up" type="Sprite2D"]
+texture = ExtResource("1_gj0jx")
+script = ExtResource("2_3u71u")
+
+[node name="drag" type="Button" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -138.0
+offset_top = -77.0
+offset_right = -156.0
+offset_bottom = -212.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="hide" type="Button" parent="."]
+anchors_preset = -1
+anchor_left = 0.196
+anchor_top = 0.597
+anchor_right = 0.809
+anchor_bottom = 0.79
+offset_left = -174.488
+offset_top = -65.132
+offset_right = -245.902
+offset_bottom = -65.24
+
+[node name="hide2" type="Button" parent="."]
+anchors_preset = -1
+anchor_left = 0.196
+anchor_top = 0.597
+anchor_right = 0.809
+anchor_bottom = 0.79
+offset_left = -34.488
+offset_top = -65.132
+offset_right = -105.902
+offset_bottom = -65.24
+
+[node name="hide3" type="Button" parent="."]
+anchors_preset = -1
+anchor_left = 0.196
+anchor_top = 0.597
+anchor_right = 0.809
+anchor_bottom = 0.79
+offset_left = 67.512
+offset_top = -165.132
+offset_right = -91.902
+offset_bottom = -185.24
+
+[connection signal="button_down" from="drag" to="." method="_on_drag_button_down"]
+[connection signal="button_up" from="drag" to="." method="_on_drag_button_up"]
+[connection signal="pressed" from="hide" to="." method="_on_hide_pressed"]
+[connection signal="pressed" from="hide2" to="." method="_on_hide_pressed"]
+[connection signal="pressed" from="hide3" to="." method="_on_hide_pressed"]

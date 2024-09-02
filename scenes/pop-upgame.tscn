@@ -1,0 +1,36 @@
+[gd_scene load_steps=3 format=3 uid="uid://d0urdwbnqvrun"]
+
+[ext_resource type="Texture2D" uid="uid://dhfokj2vsn0np" path="res://assets/Sprites/Windows/main-game.png" id="1_86g4j"]
+[ext_resource type="Script" path="res://scripts/pop-up.gd" id="2_a5ccg"]
+
+[node name="pop-up game" type="Sprite2D"]
+texture = ExtResource("1_86g4j")
+script = ExtResource("2_a5ccg")
+
+[node name="drag" type="Button" parent="."]
+self_modulate = Color(1, 1, 1, 0)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -291.0
+offset_top = -179.0
+offset_right = -328.0
+offset_bottom = -499.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="close" type="Button" parent="."]
+self_modulate = Color(1, 1, 1, 0)
+anchors_preset = -1
+anchor_left = 0.941
+anchor_top = 0.022
+anchor_right = 0.985
+anchor_bottom = 0.097
+offset_left = -292.485
+offset_top = -179.92
+offset_right = -292.225
+offset_bottom = -179.92
+
+[connection signal="button_down" from="drag" to="." method="_on_drag_button_down"]
+[connection signal="button_up" from="drag" to="." method="_on_drag_button_up"]
+[connection signal="pressed" from="close" to="." method="_on_close_pressed"]

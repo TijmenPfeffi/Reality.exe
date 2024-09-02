@@ -1,0 +1,32 @@
+[gd_scene load_steps=4 format=3 uid="uid://cw5hs7f4rgtj4"]
+
+[ext_resource type="Script" path="res://scripts/trigger_text.gd" id="1_5hbnm"]
+[ext_resource type="FontFile" uid="uid://cbrsswqtluuk4" path="res://Assets/dogicapixel.otf" id="1_26oj3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_toku6"]
+size = Vector2(28, 84)
+
+[node name="Trigger_Text" type="Area2D"]
+scale = Vector2(0.5, 0.5)
+script = ExtResource("1_5hbnm")
+text = "Nice you got it!"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_toku6")
+
+[node name="Label" type="Label" parent="."]
+offset_left = -68.0
+offset_top = -74.0
+offset_right = 67.0
+offset_bottom = -51.0
+rotation = 0.00365042
+theme_override_fonts/font = ExtResource("1_26oj3")
+text = "Test Text"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 3.5
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

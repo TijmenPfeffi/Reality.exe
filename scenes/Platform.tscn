@@ -1,0 +1,41 @@
+[gd_scene load_steps=5 format=3 uid="uid://bok0swl3ocanx"]
+
+[ext_resource type="Texture2D" uid="uid://bxw0v4wyhvy8w" path="res://assets/Sprites/Desktop icons/Platfform.png" id="1_prrfg"]
+[ext_resource type="Script" path="res://scripts/Platform drag.gd" id="1_ymjb5"]
+[ext_resource type="FontFile" uid="uid://d2wfak0byw7ur" path="res://assets/fonts/PixelOperator8-Bold.ttf" id="2_6u551"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7egch"]
+size = Vector2(42, 14)
+
+[node name="Platform" type="StaticBody2D"]
+script = ExtResource("1_ymjb5")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_prrfg")
+
+[node name="Label" type="Label" parent="."]
+offset_left = -44.0
+offset_top = 40.0
+offset_right = 47.0
+offset_bottom = 63.0
+theme_override_colors/font_color = Color(0.811765, 0.776471, 0.72549, 1)
+theme_override_colors/font_shadow_color = Color(0.054902, 0.137255, 0.109804, 1)
+theme_override_colors/font_outline_color = Color(0.054902, 0.137255, 0.109804, 1)
+theme_override_fonts/font = ExtResource("2_6u551")
+theme_override_font_sizes/font_size = 8
+text = "Platform.png"
+horizontal_alignment = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -1)
+shape = SubResource("RectangleShape2D_7egch")
+
+[node name="Button" type="Button" parent="."]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = -32.0
+offset_top = -32.0
+offset_right = 32.0
+offset_bottom = 50.0
+
+[connection signal="button_down" from="Button" to="." method="_on_button_button_down"]
+[connection signal="button_up" from="Button" to="." method="_on_button_button_up"]
