@@ -1,11 +1,5 @@
 res://scenes/game.tscn
 res://scenes/start_screen.tscn
-res://scenes/pop-up game.tscn
-res://scenes/pop-up game.gd
-res://scenes/level 1.tscn
-res://scenes/pop-up.tscn
-res://scripts/level_finish.gd
-res://scripts/player.gd
 res://scenes/level_1.tscn
 res://scenes/holes.tscn
 res://scenes/level_2.tscn
