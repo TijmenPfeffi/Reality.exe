@@ -2,9 +2,9 @@ extends StaticBody2D
 
 var dragging = false
 var of = Vector2.ZERO
-@onready var player = $"../pop-up game/Player"
 @onready var timer = $Timer
 var saved_collision_shape: CollisionShape2D
+var player: Node = null  # Store reference to player
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
@@ -20,12 +20,19 @@ func _on_button_button_up():
 
 func _on_area_2d_body_entered(body):
 	if body is CharacterBody2D:
-		saved_collision_shape = player.get_node("CollisionShape2D")
-		player.remove_child(saved_collision_shape)
-		timer.start()
-
+		if not player:
+			player = find_player()  # Locate the player dynamically
+		if player:
+			saved_collision_shape = player.get_node("CollisionShape2D")
+			player.remove_child(saved_collision_shape)
+			timer.start()
 
 func _on_timer_timeout():
-	if not player.has_node("CollisionShape2D") and saved_collision_shape:
+	if player and not player.has_node("CollisionShape2D") and saved_collision_shape:
 		player.add_child(saved_collision_shape)
 		saved_collision_shape = null  # Clear the reference after re-adding
+
+# Function to search for the player node dynamically
+func find_player() -> Node:
+	# Recursively search for the player in the scene tree
+	return get_tree().get_root().find_child("Player", true, false)

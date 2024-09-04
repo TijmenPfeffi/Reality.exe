@@ -26,7 +26,7 @@ text = "Holes.png"
 texture = ExtResource("3_tnb2i")
 
 [node name="Timer" type="Timer" parent="."]
-wait_time = 0.2
+wait_time = 0.3
 
 [node name="Button" type="Button" parent="."]
 self_modulate = Color(1, 1, 1, 0)
