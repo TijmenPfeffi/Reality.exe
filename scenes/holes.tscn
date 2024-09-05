@@ -21,6 +21,7 @@ theme_override_colors/font_outline_color = Color(0.054902, 0.137255, 0.109804, 1
 theme_override_fonts/font = ExtResource("2_s6pon")
 theme_override_font_sizes/font_size = 8
 text = "Holes.png"
+metadata/_edit_use_anchors_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("3_tnb2i")

@@ -45,11 +45,11 @@ scale = Vector2(0.8, 0.8)
 texture = ExtResource("10_hagex")
 
 [node name="Platform_png" parent="." instance=ExtResource("11_dv7ri")]
-position = Vector2(0.5, 57.5)
+position = Vector2(-321.5, 188)
 
 [node name="Holes" parent="." instance=ExtResource("11_ammbs")]
 z_index = 1
-position = Vector2(0.5, 27)
+position = Vector2(-326.5, 94.5)
 
 [node name="Screen" type="Area2D" parent="."]
 

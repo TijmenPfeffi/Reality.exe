@@ -1,20 +1,27 @@
 extends Area2D
 
-@onready var timer = $Timer
-@onready var player = %Player
-@onready var game_manager = %game_manager
+# Load the PackedScene for level_1
+@onready var level_1_scene: PackedScene = preload("res://scenes/level_1.tscn")
 
-@export var respawnPos:= Vector2(640, 630)
+# Reference to the current instance of level_1
+@onready var level_1: Node = get_tree().root.get_node("Game/level_1")
 
 func _on_body_entered(body):
-	print("You died!")
-	player.input_active = false
-	timer.start()
+	if body is CharacterBody2D:
+		print("You died!")
+		
+		# Get the parent node of level_1
+		var parent = level_1.get_parent()
+		# Create a new instance of level_1
+		var new_level_1 = level_1_scene.instantiate()
+		
+		# Add the new instance of level_1 to the parent
+		parent.add_child(new_level_1)
 
-func _on_timer_timeout():
-	game_manager.switchLayer(10)
-	player.global_position = respawnPos
-	player.input_active = true
+		# Remove the current instance of level_1
+		parent.remove_child(level_1)
+		level_1.queue_free()  # Free the old instance
+		
+		
+		
 	
-
-

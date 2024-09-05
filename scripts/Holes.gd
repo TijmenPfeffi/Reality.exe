@@ -5,6 +5,8 @@ var of = Vector2.ZERO
 @onready var timer = $Timer
 var saved_collision_shape: CollisionShape2D
 var player: Node = null  # Store reference to player
+@onready var collision_shape_2d = $Area2D/CollisionShape2D
+@onready var holes = $"."
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
@@ -14,9 +16,13 @@ func _process(delta):
 func _on_button_button_down():
 	dragging = true
 	of = get_parent().to_local(get_global_mouse_position()) - position
+	collision_shape_2d.disabled = true
+	holes.scale = Vector2(0.9, 0.9)
 
 func _on_button_button_up():
 	dragging = false
+	collision_shape_2d.disabled = false
+	holes.scale = Vector2(1, 1)
 
 func _on_area_2d_body_entered(body):
 	if body is CharacterBody2D:

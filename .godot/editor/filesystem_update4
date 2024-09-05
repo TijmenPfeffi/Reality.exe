@@ -1,10 +1,11 @@
 res://scenes/game.tscn
+res://scripts/Platform drag.gd
 res://scenes/start_screen.tscn
 res://scenes/level_1.tscn
 res://scenes/holes.tscn
 res://scenes/level_2.tscn
-res://scripts/Holes.gd
-res://scripts/level_finish.gd
-res://level_manager.gd
 res://scenes/level_3.tscn
-res://scripts/level_finish_2.gd
+res://scenes/Platform.tscn
+res://scripts/Holes.gd
+res://scripts/killzone.gd
+res://scenes/killzone.tscn
