@@ -1,8 +1,9 @@
-[gd_scene load_steps=13 format=3 uid="uid://bc72r6ld81nx3"]
+[gd_scene load_steps=14 format=3 uid="uid://bc72r6ld81nx3"]
 
 [ext_resource type="Script" path="res://level_manager.gd" id="1_bl0hj"]
 [ext_resource type="PackedScene" uid="uid://bwiewg0a0gyc2" path="res://scenes/pop-up.tscn" id="4_usvhr"]
 [ext_resource type="Texture2D" uid="uid://cjc3xapuabnkj" path="res://assets/BG/e9f7d9dd-80be-4055-aa3f-6540759b0fee.png" id="5_xu6tr"]
+[ext_resource type="Script" path="res://scenes/textfile.gd" id="6_jkuhc"]
 [ext_resource type="PackedScene" uid="uid://cmhkx1rgnsuj0" path="res://scenes/level_3.tscn" id="9_1eqvl"]
 [ext_resource type="PackedScene" uid="uid://b0wr8368yf0tb" path="res://scenes/level_2.tscn" id="9_qo6ds"]
 [ext_resource type="Texture2D" uid="uid://cnoqqpia7fvo5" path="res://assets/Sprites/Desktop icons/spikes.png" id="9_r6aqw"]
@@ -44,16 +45,16 @@ texture = ExtResource("9_r6aqw")
 position = Vector2(-371, -81.5)
 scale = Vector2(0.8, 0.8)
 texture = ExtResource("10_hagex")
+script = ExtResource("6_jkuhc")
 
 [node name="Platform_png" parent="." instance=ExtResource("11_dv7ri")]
-position = Vector2(-184, -275)
+position = Vector2(-161, -291)
 
 [node name="Holes" parent="." instance=ExtResource("11_ammbs")]
 z_index = 1
 position = Vector2(-274.5, -273.5)
 
 [node name="Screen" type="Area2D" parent="."]
-visible = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Screen"]
 position = Vector2(3.25, 6.25)
