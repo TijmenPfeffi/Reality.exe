@@ -36,29 +36,31 @@ z_index = 1
 position = Vector2(0, -2.5)
 
 [node name="Spikes" type="Sprite2D" parent="."]
-position = Vector2(-384.5, -7)
+visible = false
+position = Vector2(-95.5, -275)
 texture = ExtResource("9_r6aqw")
 
 [node name="Textfile" type="Sprite2D" parent="."]
-position = Vector2(-382, -175)
+position = Vector2(-371, -81.5)
 scale = Vector2(0.8, 0.8)
 texture = ExtResource("10_hagex")
 
 [node name="Platform_png" parent="." instance=ExtResource("11_dv7ri")]
-position = Vector2(-321.5, 188)
+position = Vector2(-184, -275)
 
 [node name="Holes" parent="." instance=ExtResource("11_ammbs")]
 z_index = 1
-position = Vector2(-326.5, 94.5)
+position = Vector2(-274.5, -273.5)
 
 [node name="Screen" type="Area2D" parent="."]
+visible = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Screen"]
 position = Vector2(3.25, 6.25)
 shape = SubResource("RectangleShape2D_q5qme")
 
 [node name="Assets folder" parent="." instance=ExtResource("11_n11ij")]
-position = Vector2(-315, -152.5)
+position = Vector2(-367, -203)
 
 [node name="level_3" parent="." instance=ExtResource("9_1eqvl")]
 position = Vector2(47, -44)
