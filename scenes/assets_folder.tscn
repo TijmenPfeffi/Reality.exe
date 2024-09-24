@@ -1,12 +1,12 @@
 [gd_scene load_steps=4 format=3 uid="uid://dlbegqwxh73w5"]
 
 [ext_resource type="Texture2D" uid="uid://do0mrx3egb4uy" path="res://assets/Sprites/Desktop icons/Folder.png" id="1_jpwol"]
-[ext_resource type="Script" path="res://scripts/Assets folder.gd" id="2_iynqs"]
+[ext_resource type="Script" path="res://scripts/assets_folder.gd" id="2_qnkfg"]
 [ext_resource type="FontFile" uid="uid://d2wfak0byw7ur" path="res://assets/fonts/PixelOperator8-Bold.ttf" id="3_fq17m"]
 
 [node name="Assets folder" type="Sprite2D"]
 texture = ExtResource("1_jpwol")
-script = ExtResource("2_iynqs")
+script = ExtResource("2_qnkfg")
 
 [node name="Label" type="Label" parent="."]
 offset_left = -49.0
@@ -18,9 +18,14 @@ theme_override_fonts/font = ExtResource("3_fq17m")
 theme_override_font_sizes/font_size = 8
 text = "Assets"
 horizontal_alignment = 1
+metadata/_edit_use_anchors_ = true
 
 [node name="push" type="Button" parent="."]
-offset_right = 8.0
-offset_bottom = 8.0
+self_modulate = Color(1, 1, 1, 0)
+offset_left = -46.0
+offset_top = -37.0
+offset_right = 43.0
+offset_bottom = 63.0
+metadata/_edit_use_anchors_ = true
 
 [connection signal="pressed" from="push" to="." method="_on_push_pressed"]

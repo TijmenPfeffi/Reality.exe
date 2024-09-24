@@ -1,0 +1,31 @@
+[gd_scene load_steps=4 format=3 uid="uid://cyyialj00e71b"]
+
+[ext_resource type="Texture2D" uid="uid://do0mrx3egb4uy" path="res://assets/Sprites/Desktop icons/Folder.png" id="1_n4mkq"]
+[ext_resource type="Script" path="res://scripts/Logs folder.gd" id="2_6uin8"]
+[ext_resource type="FontFile" uid="uid://d2wfak0byw7ur" path="res://assets/fonts/PixelOperator8-Bold.ttf" id="3_vbd3k"]
+
+[node name="homework folder" type="Sprite2D"]
+texture = ExtResource("1_n4mkq")
+script = ExtResource("2_6uin8")
+
+[node name="Label" type="Label" parent="."]
+offset_left = -49.0
+offset_top = 46.0
+offset_right = 45.0
+offset_bottom = 69.0
+theme_override_colors/font_color = Color(0.811765, 0.776471, 0.72549, 1)
+theme_override_fonts/font = ExtResource("3_vbd3k")
+theme_override_font_sizes/font_size = 8
+text = "Logs"
+horizontal_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="push" type="Button" parent="."]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = -46.0
+offset_top = -37.0
+offset_right = 43.0
+offset_bottom = 63.0
+metadata/_edit_use_anchors_ = true
+
+[connection signal="pressed" from="push" to="." method="_on_push_pressed"]

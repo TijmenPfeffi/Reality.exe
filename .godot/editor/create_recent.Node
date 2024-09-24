@@ -1,6 +1,9 @@
+CollisionShape2D
+TextureRect
+ColorRect
+Button
 Sprite2D
 SpringArm3D
-CollisionShape2D
 Node
 Area2D
 TileMap

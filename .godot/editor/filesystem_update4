@@ -1,0 +1,14 @@
+res://scenes/game.tscn
+res://scenes/start_screen.tscn
+res://scenes/level_1.tscn
+res://scenes/holes.tscn
+res://scenes/level_2.tscn
+res://scenes/level_3.tscn
+res://scenes/Platform.tscn
+res://scenes/homework_folder.tscn
+res://scenes/text_log.tscn
+res://scenes/assets_folder.tscn
+res://addons/crt_shader/ShaderScreen.material
+res://scenes/block.tscn
+res://scenes/nothing.tscn
+res://scripts/assets_folder.gd

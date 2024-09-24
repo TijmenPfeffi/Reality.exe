@@ -1,0 +1,165 @@
+[gd_scene load_steps=9 format=3 uid="uid://djxthmq2jdvkm"]
+
+[ext_resource type="Texture2D" uid="uid://be07fp6j0klrl" path="res://assets/Sprites/Windows/Archiv.png" id="1_re1ds"]
+[ext_resource type="Script" path="res://textbutton.gd" id="2_6f0ru"]
+[ext_resource type="Texture2D" uid="uid://5r28yyofdmwn" path="res://assets/Sprites/Windows/Gary texts/entry 01.png" id="3_lqu8w"]
+[ext_resource type="Script" path="res://scripts/entry_01.gd" id="4_orv7h"]
+[ext_resource type="Texture2D" uid="uid://dpno64f2augyy" path="res://assets/Sprites/Windows/Gary texts/entry 27.png" id="5_8mati"]
+[ext_resource type="Texture2D" uid="uid://clnwwcd5q1mx8" path="res://assets/Sprites/Windows/Gary texts/entry 98.png" id="6_kexsq"]
+[ext_resource type="Texture2D" uid="uid://mxlkvjbdk4av" path="res://assets/Sprites/Windows/Gary texts/entry 235.png" id="7_g778l"]
+[ext_resource type="Texture2D" uid="uid://c43lieabaryes" path="res://assets/Sprites/Windows/Gary texts/entry 450.png" id="8_xarkq"]
+
+[node name="Text_log" type="Sprite2D"]
+position = Vector2(471, 507)
+texture = ExtResource("1_re1ds")
+
+[node name="Button entry 01" type="Button" parent="."]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = -118.0
+offset_top = -116.0
+offset_right = -46.0
+offset_bottom = 13.0
+script = ExtResource("2_6f0ru")
+
+[node name="Entry01" type="Sprite2D" parent="Button entry 01"]
+visible = false
+position = Vector2(406, 74)
+texture = ExtResource("3_lqu8w")
+
+[node name="Close" type="Button" parent="Button entry 01/Entry01"]
+self_modulate = Color(1, 1, 1, 0)
+anchors_preset = -1
+anchor_left = -0.0107914
+anchor_top = -0.00537634
+anchor_right = 0.00719424
+anchor_bottom = 0.00806452
+offset_left = 124.0
+offset_top = -179.0
+offset_right = 132.0
+offset_bottom = -171.0
+script = ExtResource("4_orv7h")
+metadata/_edit_use_anchors_ = true
+
+[node name="Button entry 02" type="Button" parent="."]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = -35.0
+offset_top = -116.0
+offset_right = 37.0
+offset_bottom = 13.0
+script = ExtResource("2_6f0ru")
+
+[node name="Entry27" type="Sprite2D" parent="Button entry 02"]
+visible = false
+position = Vector2(332, 106)
+texture = ExtResource("5_8mati")
+
+[node name="Close" type="Button" parent="Button entry 02/Entry27"]
+self_modulate = Color(1, 1, 1, 0)
+anchors_preset = -1
+anchor_left = -0.0107914
+anchor_top = -0.00537634
+anchor_right = 0.00719424
+anchor_bottom = 0.00806452
+offset_left = 124.0
+offset_top = -179.0
+offset_right = 132.0
+offset_bottom = -171.0
+script = ExtResource("4_orv7h")
+
+[node name="Button entry 03" type="Button" parent="."]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = 50.0
+offset_top = -116.0
+offset_right = 122.0
+offset_bottom = 13.0
+script = ExtResource("2_6f0ru")
+
+[node name="Entry98" type="Sprite2D" parent="Button entry 03"]
+visible = false
+position = Vector2(258, 139)
+texture = ExtResource("6_kexsq")
+
+[node name="Close" type="Button" parent="Button entry 03/Entry98"]
+self_modulate = Color(1, 1, 1, 0)
+anchors_preset = -1
+anchor_left = -0.0107914
+anchor_top = -0.00537634
+anchor_right = 0.00719424
+anchor_bottom = 0.00806452
+offset_left = 124.0
+offset_top = -179.0
+offset_right = 132.0
+offset_bottom = -171.0
+script = ExtResource("4_orv7h")
+
+[node name="Button entry 04" type="Button" parent="."]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = -119.0
+offset_top = 16.0
+offset_right = -47.0
+offset_bottom = 145.0
+script = ExtResource("2_6f0ru")
+
+[node name="Entry235" type="Sprite2D" parent="Button entry 04"]
+visible = false
+position = Vector2(437, 40)
+texture = ExtResource("7_g778l")
+
+[node name="Close" type="Button" parent="Button entry 04/Entry235"]
+self_modulate = Color(1, 1, 1, 0)
+anchors_preset = -1
+anchor_left = -0.0107914
+anchor_top = -0.00537634
+anchor_right = 0.00719424
+anchor_bottom = 0.00806452
+offset_left = 124.0
+offset_top = -179.0
+offset_right = 132.0
+offset_bottom = -171.0
+script = ExtResource("4_orv7h")
+
+[node name="Button entry 05" type="Button" parent="."]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = -34.0
+offset_top = 18.0
+offset_right = 38.0
+offset_bottom = 147.0
+script = ExtResource("2_6f0ru")
+
+[node name="Entry450" type="Sprite2D" parent="Button entry 05"]
+visible = false
+position = Vector2(362, 71)
+texture = ExtResource("8_xarkq")
+
+[node name="Close" type="Button" parent="Button entry 05/Entry450"]
+self_modulate = Color(1, 1, 1, 0)
+anchors_preset = -1
+anchor_left = -0.0107914
+anchor_top = -0.00537634
+anchor_right = 0.00719424
+anchor_bottom = 0.00806452
+offset_left = 124.0
+offset_top = -179.0
+offset_right = 132.0
+offset_bottom = -171.0
+script = ExtResource("4_orv7h")
+
+[node name="Close yourself" type="Button" parent="."]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = 115.0
+offset_top = -152.0
+offset_right = 136.0
+offset_bottom = -135.0
+script = ExtResource("4_orv7h")
+
+[connection signal="pressed" from="Button entry 01" to="Button entry 01" method="_on_pressed"]
+[connection signal="pressed" from="Button entry 01/Entry01/Close" to="Button entry 01/Entry01/Close" method="_on_pressed"]
+[connection signal="pressed" from="Button entry 02" to="Button entry 02" method="_on_pressed"]
+[connection signal="pressed" from="Button entry 02/Entry27/Close" to="Button entry 02/Entry27/Close" method="_on_pressed"]
+[connection signal="pressed" from="Button entry 03" to="Button entry 03" method="_on_pressed"]
+[connection signal="pressed" from="Button entry 03/Entry98/Close" to="Button entry 03/Entry98/Close" method="_on_pressed"]
+[connection signal="pressed" from="Button entry 04" to="Button entry 04" method="_on_pressed"]
+[connection signal="pressed" from="Button entry 04/Entry235/Close" to="Button entry 04/Entry235/Close" method="_on_pressed"]
+[connection signal="pressed" from="Button entry 05" to="Button entry 05" method="_on_pressed"]
+[connection signal="pressed" from="Button entry 05/Entry450/Close" to="Button entry 05/Entry450/Close" method="_on_pressed"]
+[connection signal="pressed" from="Close yourself" to="Close yourself" method="_on_pressed"]
