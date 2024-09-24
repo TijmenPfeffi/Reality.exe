@@ -1,20 +1,15 @@
 ea4bc82a6ad023ab7ee23ee620429895
-<<<<<<< Updated upstream
-::res://::1726572365
-icon.svg::CompressedTexture2D::5913809326048556925::1725281844::1726572366::1::::<><>::
+::res://::1727184001
+icon.svg::CompressedTexture2D::5913809326048556925::1725281844::1726731138::1::::<><>::
 level_manager.gd::GDScript::-1::1726572331::0::1::::<>Node<>::
-=======
-::res://::1726572283
-icon.svg::CompressedTexture2D::5913809326048556925::1725281844::1725281923::1::::<><>::
->>>>>>> Stashed changes
-::res://assets/::1725281924
+::res://assets/::1726572366
 placeholder_tileset.png::CompressedTexture2D::1319115842310563928::1725281844::1726572366::1::::<><>::
-::res://assets/BG/::1725281924
+::res://assets/BG/::1726572366
 e9f7d9dd-80be-4055-aa3f-6540759b0fee.png::CompressedTexture2D::5410410888774716121::1725281844::1726572366::1::::<><>::
-::res://assets/fonts/::1726572331
+::res://assets/fonts/::1726572366
 PixelOperator8-Bold.ttf::FontFile::9100081288791346633::1725281844::1726572366::1::::<><>::
 PixelOperator8.ttf::FontFile::3420482561489379092::1725281844::1726572366::1::::<><>::
-::res://assets/insp/::1725281924
+::res://assets/insp/::1726572366
 0a2b304d971d5b76f3d0261cdf226747.jpg::CompressedTexture2D::8815106286636639370::1725281844::1726572366::1::::<><>::
 0f8fa54e2732b1e07932792cd6b011ae.jpg::CompressedTexture2D::9132683932735638387::1725281844::1726572366::1::::<><>::
 896fccba-8228-4eac-aad4-c13113e69068.jpeg::CompressedTexture2D::7909590502761971361::1725281844::1726572366::1::::<><>::
@@ -26,74 +21,55 @@ e92585d5-9592-46b7-99cd-abecbbc4cdf9.jpeg::CompressedTexture2D::6524342087029968
 f50f6544-a405-4292-af7c-e3a9f0b57ae9.jpeg::CompressedTexture2D::7906546481174677042::1725281844::1726572366::1::::<><>::
 ffb0f35946f5e76ebfa48213948dc3f8.jpg::CompressedTexture2D::2673334659717466141::1725281844::1726572366::1::::<><>::
 ::res://assets/Sprites/::1725281844
-::res://assets/Sprites/Desktop icons/::1725281924
+::res://assets/Sprites/Desktop icons/::1726572366
 Folder.png::CompressedTexture2D::8194275519754241948::1725281844::1726572366::1::::<><>::
 Holes.png::CompressedTexture2D::8563885750704262332::1725281844::1726572366::1::::<><>::
 Platfform.png::CompressedTexture2D::4047737382711835504::1725281844::1726572366::1::::<><>::
 spikes.png::CompressedTexture2D::5715198468075873270::1725281844::1726572366::1::::<><>::
 textfile.png::CompressedTexture2D::8823513642460582438::1725281844::1726572366::1::::<><>::
-::res://assets/Sprites/UI/::1725281924
-<<<<<<< Updated upstream
+::res://assets/Sprites/UI/::1726572366
 cursor.png::CompressedTexture2D::2172645104654816393::1725281844::1726572366::1::::<><>::
-::res://assets/Sprites/Windows/::1726572330
-Main-game-close.png::CompressedTexture2D::6781240255789783623::1725281844::1726572366::1::::<><>::
-main-game.png::CompressedTexture2D::7661774256552216981::1725281844::1726572366::1::::<><>::
-=======
-cursor.png::CompressedTexture2D::2172645104654816393::1725281844::1725281924::1::::<><>::
-::res://assets/Sprites/Windows/::1726152939
-Main-game-close.png::CompressedTexture2D::6781240255789783623::1725281844::1725281924::1::::<><>::
-main-game.png::CompressedTexture2D::7661774256552216981::1725281844::1725281924::1::::<><>::
->>>>>>> Stashed changes
+::res://assets/Sprites/Windows/::1726731138
+Main-game-close.png::CompressedTexture2D::6781240255789783623::1725281844::1726731138::1::::<><>::
+main-game.png::CompressedTexture2D::7661774256552216981::1726654241::1726731138::1::::<><>::
+::res://assets/Sprites/Windows/Gary texts/::1726663472
 ::res://assets/Tiny doctor/::1725281844
-::res://assets/Tiny doctor/idle/::1725281924
+::res://assets/Tiny doctor/idle/::1726572366
 Idle 01.png::CompressedTexture2D::8958573029427225541::1725281844::1726572366::1::::<><>::
 Idle 02.png::CompressedTexture2D::6963749456857365249::1725281844::1726572366::1::::<><>::
 Idle 03.png::CompressedTexture2D::2006921754340451240::1725281844::1726572366::1::::<><>::
 Idle 04.png::CompressedTexture2D::2002013370367238502::1725281844::1726572366::1::::<><>::
 Idle 05.png::CompressedTexture2D::6837355232695558480::1725281844::1726572366::1::::<><>::
 Idle 06.png::CompressedTexture2D::7392796157322681907::1725281844::1726572366::1::::<><>::
-::res://assets/Tiny doctor/jump/::1725281923
+::res://assets/Tiny doctor/jump/::1726572366
 Jump 01.png::CompressedTexture2D::5363376931985726305::1725281844::1726572366::1::::<><>::
 Jump 02.png::CompressedTexture2D::2382131097522436034::1725281844::1726572366::1::::<><>::
 Jump 03.png::CompressedTexture2D::516044784474138780::1725281844::1726572366::1::::<><>::
-::res://assets/Tiny doctor/run/::1725281923
+::res://assets/Tiny doctor/run/::1726572366
 Run 01.png::CompressedTexture2D::1713815818515865377::1725281844::1726572366::1::::<><>::
 Run 02.png::CompressedTexture2D::1902040921337611427::1725281844::1726572366::1::::<><>::
 Run 03.png::CompressedTexture2D::3792975661848778552::1725281844::1726572366::1::::<><>::
 Run 04.png::CompressedTexture2D::2447253593428549902::1725281844::1726572366::1::::<><>::
 Run 05.png::CompressedTexture2D::9220201557413130740::1725281844::1726572366::1::::<><>::
 Run 06.png::CompressedTexture2D::2297005102698378442::1725281844::1726572366::1::::<><>::
-::res://assets/You/::1725281923
+::res://assets/You/::1726572366
 damage.png::CompressedTexture2D::8295617394425924571::1725281844::1726572366::1::::<><>::
 death.png::CompressedTexture2D::6022570194621277579::1725281844::1726572366::1::::<><>::
 idle.png::CompressedTexture2D::4520519687664841127::1725281844::1726572366::1::::<><>::
 jump.png::CompressedTexture2D::2798072005825588954::1725281844::1726572366::1::::<><>::
 Read Me.txt::TextFile::-1::1725281844::0::1::::<><>::
-<<<<<<< Updated upstream
 run.png::CompressedTexture2D::1514698568778226937::1725281844::1726572366::1::::<><>::
 walk.png::CompressedTexture2D::3204888462296576431::1725281844::1726572366::1::::<><>::
-::res://scenes/::1726572331
-assets_folder.tscn::PackedScene::7933658167001173834::1725281844::0::1::::<><>::uid://do0mrx3egb4uy::::res://assets/Sprites/Desktop icons/Folder.png<>res://scripts/Assets folder.gd<>uid://d2wfak0byw7ur::::res://assets/fonts/PixelOperator8-Bold.ttf
+::res://scenes/::1726731477
+assets_folder.tscn::PackedScene::7933658167001173834::1726731477::0::1::::<><>::uid://do0mrx3egb4uy::::res://assets/Sprites/Desktop icons/Folder.png<>res://scripts/Assets folder.gd<>uid://d2wfak0byw7ur::::res://assets/fonts/PixelOperator8-Bold.ttf
 draggable platform.tscn::PackedScene::6432490175995874215::1725281844::0::1::::<><>::res://scripts/Draggable platform.gd<>uid://cqixttmwq7k50::::res://icon.svg
-game.tscn::PackedScene::2594529821798302558::1726572331::0::1::::<><>::res://level_manager.gd<>uid://bwiewg0a0gyc2::::res://scenes/pop-up.tscn<>uid://cjc3xapuabnkj::::res://assets/BG/e9f7d9dd-80be-4055-aa3f-6540759b0fee.png<>uid://cmhkx1rgnsuj0::::res://scenes/level_3.tscn<>uid://b0wr8368yf0tb::::res://scenes/level_2.tscn<>uid://cnoqqpia7fvo5::::res://assets/Sprites/Desktop icons/spikes.png<>uid://dxyf8lr6ordxe::::res://assets/Sprites/Desktop icons/textfile.png<>uid://10bjel6qpxqq::::res://scenes/holes.tscn<>uid://bok0swl3ocanx::::res://scenes/Platform.tscn<>uid://dlbegqwxh73w5::::res://scenes/assets_folder.tscn<>uid://dywxupgtd574c::::res://scenes/level_1.tscn
-holes.tscn::PackedScene::1876596396094992292::1726572331::0::1::::<><>::res://scripts/Holes.gd<>uid://d2wfak0byw7ur::::res://assets/fonts/PixelOperator8-Bold.ttf<>uid://duan7g4nro34s::::res://assets/Sprites/Desktop icons/Holes.png
+game.tscn::PackedScene::2594529821798302558::1726731476::0::1::::<><>::res://level_manager.gd<>uid://bwiewg0a0gyc2::::res://scenes/pop-up.tscn<>uid://cjc3xapuabnkj::::res://assets/BG/e9f7d9dd-80be-4055-aa3f-6540759b0fee.png<>res://scenes/textfile.gd<>uid://cmhkx1rgnsuj0::::res://scenes/level_3.tscn<>uid://b0wr8368yf0tb::::res://scenes/level_2.tscn<>uid://cnoqqpia7fvo5::::res://assets/Sprites/Desktop icons/spikes.png<>uid://dxyf8lr6ordxe::::res://assets/Sprites/Desktop icons/textfile.png<>uid://10bjel6qpxqq::::res://scenes/holes.tscn<>uid://bok0swl3ocanx::::res://scenes/Platform.tscn<>uid://dlbegqwxh73w5::::res://scenes/assets_folder.tscn<>uid://dywxupgtd574c::::res://scenes/level_1.tscn
+holes.tscn::PackedScene::1876596396094992292::1726731477::0::1::::<><>::res://scripts/Holes.gd<>uid://d2wfak0byw7ur::::res://assets/fonts/PixelOperator8-Bold.ttf<>uid://duan7g4nro34s::::res://assets/Sprites/Desktop icons/Holes.png
 killzone.tscn::PackedScene::1629450719081504943::1725281844::0::1::::<><>::res://scripts/killzone.gd
-level_1.tscn::PackedScene::8890643613680699868::1726572331::0::1::::<><>::uid://dhfokj2vsn0np::::res://assets/Sprites/Windows/main-game.png<>res://scenes/pop-up game.gd<>uid://bk2c75b2qtlse::::res://scenes/player.tscn<>uid://s18v6332mg6s::::res://assets/placeholder_tileset.png<>res://scripts/level_finish.gd
-level_2.tscn::PackedScene::4187650725383525235::1726572331::0::1::::<><>::uid://dhfokj2vsn0np::::res://assets/Sprites/Windows/main-game.png<>res://scenes/pop-up game.gd<>uid://bk2c75b2qtlse::::res://scenes/player.tscn<>uid://s18v6332mg6s::::res://assets/placeholder_tileset.png<>res://scripts/level_finish_2.gd
-level_3.tscn::PackedScene::5630207770667981051::1726572331::0::1::::<><>::uid://dhfokj2vsn0np::::res://assets/Sprites/Windows/main-game.png<>res://scenes/pop-up game.gd<>uid://bk2c75b2qtlse::::res://scenes/player.tscn<>uid://s18v6332mg6s::::res://assets/placeholder_tileset.png<>res://scripts/level_finish.gd
-=======
-run.png::CompressedTexture2D::1514698568778226937::1725281844::1725281923::1::::<><>::
-walk.png::CompressedTexture2D::3204888462296576431::1725281844::1725281923::1::::<><>::
-::res://scenes/::1725290997
-assets_folder.tscn::PackedScene::7933658167001173834::1725281844::0::1::::<><>::uid://do0mrx3egb4uy::::res://assets/Sprites/Desktop icons/Folder.png<>res://scripts/Assets folder.gd<>uid://d2wfak0byw7ur::::res://assets/fonts/PixelOperator8-Bold.ttf
-draggable platform.tscn::PackedScene::6432490175995874215::1725281844::0::1::::<><>::res://scripts/Draggable platform.gd<>uid://cqixttmwq7k50::::res://icon.svg
-game.tscn::PackedScene::2594529821798302558::1725290997::0::1::::<><>::uid://bwiewg0a0gyc2::::res://scenes/pop-up.tscn<>uid://cjc3xapuabnkj::::res://assets/BG/e9f7d9dd-80be-4055-aa3f-6540759b0fee.png<>uid://cnoqqpia7fvo5::::res://assets/Sprites/Desktop icons/spikes.png<>uid://dxyf8lr6ordxe::::res://assets/Sprites/Desktop icons/textfile.png<>uid://10bjel6qpxqq::::res://scenes/holes.tscn<>uid://bok0swl3ocanx::::res://scenes/Platform.tscn<>uid://dlbegqwxh73w5::::res://scenes/assets_folder.tscn<>uid://dywxupgtd574c::::res://scenes/level_1.tscn
-holes.tscn::PackedScene::1876596396094992292::1725290997::0::1::::<><>::res://scripts/Holes.gd<>uid://d2wfak0byw7ur::::res://assets/fonts/PixelOperator8-Bold.ttf<>uid://duan7g4nro34s::::res://assets/Sprites/Desktop icons/Holes.png
-killzone.tscn::PackedScene::1629450719081504943::1725281844::0::1::::<><>::res://scripts/killzone.gd
-level_1.tscn::PackedScene::8890643613680699868::1725290997::0::1::::<><>::uid://dhfokj2vsn0np::::res://assets/Sprites/Windows/main-game.png<>res://scenes/pop-up game.gd<>uid://bk2c75b2qtlse::::res://scenes/player.tscn<>uid://s18v6332mg6s::::res://assets/placeholder_tileset.png<>res://scripts/level_finish.gd
-level_2.tscn::PackedScene::4187650725383525235::1725290997::0::1::::<><>::uid://dhfokj2vsn0np::::res://assets/Sprites/Windows/main-game.png<>res://scenes/pop-up game.gd<>uid://bk2c75b2qtlse::::res://scenes/player.tscn<>uid://s18v6332mg6s::::res://assets/placeholder_tileset.png<>res://scripts/level_finish.gd
->>>>>>> Stashed changes
-Platform.tscn::PackedScene::3391259515073133313::1725281844::0::1::::<><>::uid://bxw0v4wyhvy8w::::res://assets/Sprites/Desktop icons/Platfform.png<>res://scripts/Platform drag.gd<>uid://d2wfak0byw7ur::::res://assets/fonts/PixelOperator8-Bold.ttf
+level_1.tscn::PackedScene::8890643613680699868::1726731477::0::1::::<><>::uid://dhfokj2vsn0np::::res://assets/Sprites/Windows/main-game.png<>res://scenes/pop-up game.gd<>uid://bk2c75b2qtlse::::res://scenes/player.tscn<>uid://s18v6332mg6s::::res://assets/placeholder_tileset.png<>res://scripts/level_finish.gd
+level_2.tscn::PackedScene::4187650725383525235::1726731477::0::1::::<><>::uid://dhfokj2vsn0np::::res://assets/Sprites/Windows/main-game.png<>res://scenes/pop-up game.gd<>uid://bk2c75b2qtlse::::res://scenes/player.tscn<>uid://s18v6332mg6s::::res://assets/placeholder_tileset.png<>res://scripts/level_finish_2.gd
+level_3.tscn::PackedScene::5630207770667981051::1726731477::0::1::::<><>::uid://dhfokj2vsn0np::::res://assets/Sprites/Windows/main-game.png<>res://scenes/pop-up game.gd<>uid://bk2c75b2qtlse::::res://scenes/player.tscn<>uid://s18v6332mg6s::::res://assets/placeholder_tileset.png<>res://scripts/level_finish.gd
+Platform.tscn::PackedScene::3391259515073133313::1726731477::0::1::::<><>::uid://bxw0v4wyhvy8w::::res://assets/Sprites/Desktop icons/Platfform.png<>res://scripts/Platform drag.gd<>uid://d2wfak0byw7ur::::res://assets/fonts/PixelOperator8-Bold.ttf
 platform_drag.tscn::PackedScene::783955042663418758::1725281844::0::1::::<><>::uid://cqixttmwq7k50::::res://icon.svg<>res://scripts/Platform drag.gd
 player.tscn::PackedScene::3144227477317735116::1725281844::0::1::::<><>::res://scripts/player.gd<>uid://dqgpuvde3fycp::::res://assets/You/damage.png<>uid://cr2m368pb3g4j::::res://assets/You/death.png<>uid://b5n1kfoayxwl8::::res://assets/You/idle.png<>uid://bf4n3pywkud3w::::res://assets/You/jump.png<>uid://vty4m6w0qqi0::::res://assets/You/run.png<>uid://blwqbryhuplkx::::res://assets/You/walk.png
 pop-up game.gd::GDScript::-1::1725283784::0::1::::<>Sprite2D<>::
@@ -101,12 +77,13 @@ pop-up game.tscn::PackedScene::3327579366836108912::1725283639::0::1::::<><>::ui
 pop-up.tscn::PackedScene::3947372774993148607::1725284028::0::1::::<><>::uid://c3u5bh6hhudtf::::res://assets/Sprites/Windows/Main-game-close.png<>res://scripts/pop-up single.gd
 pop-upgame.tscn::PackedScene::8956309401041448065::1725281844::0::1::::<><>::uid://dhfokj2vsn0np::::res://assets/Sprites/Windows/main-game.png<>res://scripts/pop-up.gd
 pop-upgameclose.tscn::PackedScene::2024666227337533552::1725281844::0::1::::<><>::uid://dhfokj2vsn0np::::res://assets/Sprites/Windows/main-game.png<>res://scripts/pop-up single.gd
-start_screen.tscn::PackedScene::6976009563168691580::1725290997::0::1::::<><>::res://scripts/start_screen.gd<>uid://d2wfak0byw7ur::::res://assets/fonts/PixelOperator8-Bold.ttf
+start_screen.tscn::PackedScene::6976009563168691580::1726731476::0::1::::<><>::res://scripts/start_screen.gd<>uid://d2wfak0byw7ur::::res://assets/fonts/PixelOperator8-Bold.ttf
+textfile.gd::GDScript::-1::1726574359::0::1::::<>Sprite2D<>::
 trigger_text.tscn::PackedScene::6379386113096191035::1725281844::0::1::::<><>::res://scripts/trigger_text.gd<>uid://cbrsswqtluuk4::::res://Assets/dogicapixel.otf
-::res://scripts/::1726572331
-Assets folder.gd::GDScript::-1::1725281844::0::1::::<>Sprite2D<>::
+::res://scripts/::1726731476
+Assets folder.gd::GDScript::-1::1726731425::0::1::::<>Sprite2D<>::
 Draggable platform.gd::GDScript::-1::1725281844::0::1::::<>StaticBody2D<>::
-Holes.gd::GDScript::-1::1726572331::0::1::::<>StaticBody2D<>::
+Holes.gd::GDScript::-1::1726731476::0::1::::<>StaticBody2D<>::
 killzone.gd::GDScript::-1::1726572331::0::1::::<>Area2D<>::
 level_finish.gd::GDScript::-1::1726572331::0::1::::<>Area2D<>::
 level_finish_2.gd::GDScript::-1::1726572331::0::1::::<>Area2D<>::
@@ -116,4 +93,4 @@ pop-up game.gd::GDScript::-1::1725281844::0::1::::<>Sprite2D<>::
 pop-up single.gd::GDScript::-1::1725281844::0::1::::<>Sprite2D<>::
 pop-up.gd::GDScript::-1::1725281844::0::1::::<>Sprite2D<>::
 start_screen.gd::GDScript::-1::1725281844::0::1::::<>Control<>::
-::res://texts/::1726572331
+::res://texts/::1726647728
