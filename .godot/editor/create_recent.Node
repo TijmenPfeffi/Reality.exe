@@ -1,8 +1,12 @@
+AudioStreamPlayer2D
+AnimationPlayer
+Sprite2D
+AnimationTree
+Label
 CollisionShape2D
 TextureRect
 ColorRect
 Button
-Sprite2D
 SpringArm3D
 Node
 Area2D

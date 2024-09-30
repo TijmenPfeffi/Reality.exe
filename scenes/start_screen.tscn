@@ -1,7 +1,10 @@
-[gd_scene load_steps=3 format=3 uid="uid://c6nh4ggsa886s"]
+[gd_scene load_steps=6 format=3 uid="uid://c6nh4ggsa886s"]
 
 [ext_resource type="Script" path="res://scripts/start_screen.gd" id="1_mmfmq"]
 [ext_resource type="FontFile" uid="uid://d2wfak0byw7ur" path="res://assets/fonts/PixelOperator8-Bold.ttf" id="2_bvjgc"]
+[ext_resource type="Material" uid="uid://cxr7ihe8nn4hv" path="res://addons/crt_shader/ShaderScreen.material" id="3_q8cwr"]
+[ext_resource type="Script" path="res://addons/crt_shader/crt_screen.gd" id="4_eyyya"]
+[ext_resource type="Texture2D" uid="uid://b7rrbl58e5lm6" path="res://addons/crt_shader/CRTFrame.png" id="5_7uhj0"]
 
 [node name="StartScreen" type="Control"]
 layout_mode = 3
@@ -15,17 +18,20 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = 838.0
-offset_top = 416.0
-offset_right = 1169.0
-offset_bottom = 540.0
+offset_left = -214.0
+offset_top = -2.0
+offset_right = 117.0
+offset_bottom = 122.0
 grow_horizontal = 2
 grow_vertical = 0
 size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0.811765, 0.776471, 0.721569, 1)
 theme_override_fonts/font = ExtResource("2_bvjgc")
 theme_override_font_sizes/font_size = 50
 text = "Play"
 text_overrun_behavior = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="Button_Start"]
 
 [node name="Button_Quit" type="Button" parent="."]
 layout_mode = 1
@@ -34,17 +40,61 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = 843.0
-offset_top = 587.0
-offset_right = 1173.0
-offset_bottom = 710.0
+offset_left = -209.0
+offset_top = 169.0
+offset_right = 121.0
+offset_bottom = 292.0
 grow_horizontal = 2
 grow_vertical = 0
 size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0.811765, 0.776471, 0.721569, 1)
 theme_override_fonts/font = ExtResource("2_bvjgc")
 theme_override_font_sizes/font_size = 50
 text = "Quit"
 text_overrun_behavior = 2
+
+[node name="ColorRect" type="ColorRect" parent="."]
+z_index = 6
+material = ExtResource("3_q8cwr")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -1288.0
+offset_top = -721.0
+offset_right = 1282.0
+offset_bottom = 717.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("4_eyyya")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+z_index = 6
+layout_mode = 0
+offset_left = -1281.0
+offset_top = -720.0
+offset_right = 1287.0
+offset_bottom = 720.0
+mouse_filter = 2
+texture = ExtResource("5_7uhj0")
+expand_mode = 1
+
+[node name="Camera2D" type="Camera2D" parent="."]
+drag_horizontal_enabled = true
+drag_vertical_enabled = true
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = -1304.0
+offset_top = -341.0
+offset_right = 1288.0
+offset_bottom = -85.0
+theme_override_colors/font_color = Color(0.811765, 0.776471, 0.721569, 1)
+theme_override_fonts/font = ExtResource("2_bvjgc")
+theme_override_font_sizes/font_size = 128
+text = "Reality.exe"
+horizontal_alignment = 1
 
 [connection signal="pressed" from="Button_Start" to="." method="_on_button_start_pressed"]
 [connection signal="pressed" from="Button_Quit" to="." method="_on_button_quit_pressed"]

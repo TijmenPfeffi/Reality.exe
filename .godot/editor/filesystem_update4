@@ -9,3 +9,6 @@ res://scenes/nothing.tscn
 res://scenes/homework_folder.tscn
 res://scenes/text_log.tscn
 res://scenes/assets_folder.tscn
+res://scenes/Startup animation.tscn
+res://scripts/start_screen.gd
+res://scripts/animation_player.gd

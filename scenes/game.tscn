@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=3 uid="uid://bc72r6ld81nx3"]
+[gd_scene load_steps=24 format=3 uid="uid://bc72r6ld81nx3"]
 
 [ext_resource type="Script" path="res://level_manager.gd" id="1_bl0hj"]
 [ext_resource type="PackedScene" uid="uid://bwiewg0a0gyc2" path="res://scenes/pop-up.tscn" id="4_usvhr"]
@@ -21,11 +21,18 @@
 [ext_resource type="Material" uid="uid://cxr7ihe8nn4hv" path="res://addons/crt_shader/ShaderScreen.material" id="17_jy0kn"]
 [ext_resource type="Script" path="res://addons/crt_shader/crt_screen.gd" id="17_xt0eq"]
 [ext_resource type="Texture2D" uid="uid://b7rrbl58e5lm6" path="res://addons/crt_shader/CRTFrame.png" id="18_y3j2a"]
+[ext_resource type="AudioStream" uid="uid://hrfa0ij1s7ht" path="res://assets/Sounds/8bit-computer-vent.mp3" id="22_f6rik"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_j4ovl"]
 
 [node name="Game" type="Node2D"]
 scale = Vector2(2, 2)
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(1.5, 0.5)
+stream = ExtResource("22_f6rik")
+autoplay = true
+parameters/looping = true
 
 [node name="level_manager" type="Node" parent="."]
 script = ExtResource("1_bl0hj")
