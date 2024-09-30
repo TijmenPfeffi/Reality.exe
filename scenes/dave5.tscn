@@ -1,0 +1,49 @@
+[gd_scene load_steps=3 format=3 uid="uid://d1pqgq4a2050v"]
+
+[ext_resource type="Texture2D" uid="uid://b4b6j3qe6ggju" path="res://assets/Sprites/Windows/Dave texts/Dave5.png" id="1_n5swa"]
+[ext_resource type="Script" path="res://scripts/pop-up single.gd" id="2_psrd4"]
+
+[node name="dave5" type="Sprite2D"]
+texture = ExtResource("1_n5swa")
+script = ExtResource("2_psrd4")
+
+[node name="drag" type="Button" parent="."]
+self_modulate = Color(1, 1, 1, 0)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -214.0
+offset_top = -101.0
+offset_right = -232.0
+offset_bottom = -287.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="hide" type="Button" parent="."]
+self_modulate = Color(1, 1, 1, 0.313726)
+anchors_preset = -1
+anchor_left = 0.196
+anchor_top = 0.597
+anchor_right = 0.809
+anchor_bottom = 0.79
+offset_left = -173.672
+offset_top = -69.385
+offset_right = -265.488
+offset_bottom = -80.95
+
+[node name="hide2" type="Button" parent="."]
+self_modulate = Color(1, 1, 1, 0.313726)
+anchors_preset = -1
+anchor_left = 0.196
+anchor_top = 0.597
+anchor_right = 0.809
+anchor_bottom = 0.79
+offset_left = 114.328
+offset_top = -219.385
+offset_right = -139.488
+offset_bottom = -247.95
+
+[connection signal="button_down" from="drag" to="." method="_on_drag_button_down"]
+[connection signal="button_up" from="drag" to="." method="_on_drag_button_up"]
+[connection signal="pressed" from="hide" to="." method="_on_hide_pressed"]
+[connection signal="pressed" from="hide2" to="." method="_on_hide_pressed"]

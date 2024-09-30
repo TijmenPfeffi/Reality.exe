@@ -1,10 +1,11 @@
-[gd_scene load_steps=9 format=3 uid="uid://b0wr8368yf0tb"]
+[gd_scene load_steps=11 format=3 uid="uid://b0wr8368yf0tb"]
 
 [ext_resource type="Texture2D" uid="uid://dhfokj2vsn0np" path="res://assets/Sprites/Windows/main-game.png" id="1_m3v0t"]
 [ext_resource type="Script" path="res://scenes/pop-up game.gd" id="2_vmok4"]
 [ext_resource type="PackedScene" uid="uid://bk2c75b2qtlse" path="res://scenes/player.tscn" id="3_2ydrs"]
 [ext_resource type="Texture2D" uid="uid://s18v6332mg6s" path="res://assets/placeholder_tileset.png" id="4_0duj3"]
 [ext_resource type="Script" path="res://scripts/level_finish_2.gd" id="5_7ndgm"]
+[ext_resource type="Script" path="res://scripts/dave3.gd" id="6_mt3pm"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_sr0k6"]
 texture = ExtResource("4_0duj3")
@@ -1088,6 +1089,9 @@ sources/0 = SubResource("TileSetAtlasSource_sr0k6")
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1i0af"]
 size = Vector2(11, 13)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4pnyf"]
+size = Vector2(20, 63)
+
 [node name="level_2" type="Sprite2D"]
 position = Vector2(395, 246)
 texture = ExtResource("1_m3v0t")
@@ -1135,7 +1139,16 @@ script = ExtResource("5_7ndgm")
 position = Vector2(215, -19)
 shape = SubResource("RectangleShape2D_1i0af")
 
+[node name="Area2D2" type="Area2D" parent="."]
+position = Vector2(215, -19)
+script = ExtResource("6_mt3pm")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
+position = Vector2(-224, -11.5)
+shape = SubResource("RectangleShape2D_4pnyf")
+
 [connection signal="button_down" from="drag" to="." method="_on_drag_button_down"]
 [connection signal="button_up" from="drag" to="." method="_on_drag_button_up"]
 [connection signal="pressed" from="close" to="." method="_on_close_pressed"]
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
+[connection signal="body_entered" from="Area2D2" to="Area2D2" method="_on_body_entered"]

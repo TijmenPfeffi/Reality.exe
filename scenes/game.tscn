@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=3 uid="uid://bc72r6ld81nx3"]
+[gd_scene load_steps=30 format=3 uid="uid://bc72r6ld81nx3"]
 
 [ext_resource type="Script" path="res://level_manager.gd" id="1_bl0hj"]
 [ext_resource type="PackedScene" uid="uid://bwiewg0a0gyc2" path="res://scenes/pop-up.tscn" id="4_usvhr"]
@@ -18,10 +18,16 @@
 [ext_resource type="PackedScene" uid="uid://djxthmq2jdvkm" path="res://scenes/text_log.tscn" id="13_c78n4"]
 [ext_resource type="PackedScene" uid="uid://c4h2uatms750m" path="res://scenes/nothing.tscn" id="13_snhb6"]
 [ext_resource type="PackedScene" uid="uid://cfxlvuub2iejy" path="res://scenes/logs_folder.tscn" id="14_wxv8a"]
+[ext_resource type="PackedScene" uid="uid://6ha25vi42cpc" path="res://scenes/level_4.tscn" id="15_84ax1"]
 [ext_resource type="Material" uid="uid://cxr7ihe8nn4hv" path="res://addons/crt_shader/ShaderScreen.material" id="17_jy0kn"]
 [ext_resource type="Script" path="res://addons/crt_shader/crt_screen.gd" id="17_xt0eq"]
 [ext_resource type="Texture2D" uid="uid://b7rrbl58e5lm6" path="res://addons/crt_shader/CRTFrame.png" id="18_y3j2a"]
 [ext_resource type="AudioStream" uid="uid://hrfa0ij1s7ht" path="res://assets/Sounds/8bit-computer-vent.mp3" id="22_f6rik"]
+[ext_resource type="PackedScene" uid="uid://b5erxanip8ln6" path="res://scenes/dave1.tscn" id="24_5jpbv"]
+[ext_resource type="PackedScene" uid="uid://dttdcwl2ggtb" path="res://scenes/dave2.tscn" id="25_jk4gh"]
+[ext_resource type="PackedScene" uid="uid://buby37r3n8jux" path="res://scenes/dave3.tscn" id="26_nh4oi"]
+[ext_resource type="PackedScene" uid="uid://y2d7yfsqik6j" path="res://scenes/dave4.tscn" id="27_x7ljc"]
+[ext_resource type="PackedScene" uid="uid://d1pqgq4a2050v" path="res://scenes/dave5.tscn" id="28_xvehu"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_j4ovl"]
 
@@ -101,6 +107,9 @@ visible = false
 z_index = 2
 position = Vector2(111, 103.5)
 
+[node name="level_4" parent="." instance=ExtResource("15_84ax1")]
+position = Vector2(179, -19)
+
 [node name="level_3" parent="." instance=ExtResource("9_1eqvl")]
 position = Vector2(179, -19)
 
@@ -139,12 +148,38 @@ z_index = 6
 offset_left = -641.0
 offset_top = -362.0
 offset_right = 642.0
-offset_bottom = 358.0
+offset_bottom = 360.0
 mouse_filter = 2
 texture = ExtResource("18_y3j2a")
 expand_mode = 1
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="Dave 1" parent="." instance=ExtResource("24_5jpbv")]
+z_index = 2
+position = Vector2(183.5, -8.5)
+
+[node name="dave2" parent="." instance=ExtResource("25_jk4gh")]
+visible = false
+z_index = 2
+position = Vector2(183.5, -8.5)
+
+[node name="dave3" parent="." instance=ExtResource("26_nh4oi")]
+visible = false
+z_index = 2
+position = Vector2(183.5, -8.5)
+
+[node name="dave4" parent="." instance=ExtResource("27_x7ljc")]
+visible = false
+z_index = 2
+position = Vector2(183.5, -8.5)
+
+[node name="dave5" parent="." instance=ExtResource("28_xvehu")]
+visible = false
+z_index = 2
+position = Vector2(183.5, -8.5)
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2(-13.5, 347)
 shape = SubResource("WorldBoundaryShape2D_j4ovl")
 

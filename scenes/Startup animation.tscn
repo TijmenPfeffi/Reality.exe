@@ -8,6 +8,21 @@
 [ext_resource type="Texture2D" uid="uid://tdmrgi0y2vpb" path="res://assets/Sprites/UI/loading dot.png" id="6_m38jj"]
 [ext_resource type="AudioStream" uid="uid://dwgt1tkidxm17" path="res://assets/Sounds/8bit-computer-startup.mp3" id="7_hxv7i"]
 
+[sub_resource type="Animation" id="Animation_xihcn"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("IOS/bar 1:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
 [sub_resource type="Animation" id="Animation_qkcao"]
 resource_name = "loading"
 length = 6.0
@@ -156,21 +171,6 @@ tracks/11/keys = {
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
 }
 
-[sub_resource type="Animation" id="Animation_xihcn"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("IOS/bar 1:self_modulate")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Color(1, 1, 1, 0)]
-}
-
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_yxgfw"]
 _data = {
 "RESET": SubResource("Animation_xihcn"),
@@ -200,6 +200,7 @@ script = ExtResource("4_p18mi")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 z_index = 6
+layout_mode = 0
 offset_left = -1281.0
 offset_top = -720.0
 offset_right = 1287.0

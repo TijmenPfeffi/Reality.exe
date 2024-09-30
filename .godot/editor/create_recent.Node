@@ -1,13 +1,13 @@
+CollisionShape2D
+Area2D
 AudioStreamPlayer2D
 AnimationPlayer
 Sprite2D
 AnimationTree
 Label
-CollisionShape2D
 TextureRect
 ColorRect
 Button
 SpringArm3D
 Node
-Area2D
 TileMap
